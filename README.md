@@ -2,7 +2,6 @@
 
 Begleitprojekt für Mikrocomputertechnik 3 im Kurs TEA22 an der DHBW Ravensburg Campus Friedrichshafen
 
-Einfacher Test
 
 
 **WICHTIG** Bitte verwenden sie zur Entwicklung die vorgefertigten Umgebungen.
