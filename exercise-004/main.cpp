@@ -1,6 +1,9 @@
 #include <fmt/chrono.h>
 #include <fmt/format.h>
 
+#include triangle.h
+#include triangle.
+
 //#define MAX_NAME_LENGTH 25
 
 const unsigned int MAX_NAME_LENGTH = 25; //Alternative zu Zeile 4
