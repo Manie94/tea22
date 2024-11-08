@@ -20,7 +20,7 @@ Triangle* newTriangle(){    //Constructor
 void freeTriangle(Triangle* ptr) {
     free(ptr);
     return
-}
+};
 
 Triangle* newTriangleWithValues(unsigned int a, unsigned int b, unsigned int c){
     Triangle*temp = newTriangle();
