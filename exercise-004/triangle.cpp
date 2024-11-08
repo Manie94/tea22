@@ -1,4 +1,5 @@
 #include "triangle.h"
+#include "stdlib.h"
 
 unsigned int perimeter (Triangle* self) {
 
@@ -7,9 +8,24 @@ unsigned int perimeter (Triangle* self) {
 
     //Triangle temp; Nur ein Dreieck kann erzeugt werden
 
-Triangle* newTriangle(){
+Triangle* newTriangle(){    //Constructor
 
     //Triangle temp; -> Problem Verweis auf Stacklokale Variable
-    Triangle* = malloc();
-    return &temp; 
+    Triangle* temp = (Triangle*) malloc(sizeof(Triangle));
+    temp->side_a = 0;
+    temp->side_b = 0;
+    temp->side_c = 0;
+    return temp; 
+}
+void freeTriangle(Triangle* ptr) {
+    free(ptr);
+    return
+}
+
+Triangle* newTriangleWithValues(unsigned int a, unsigned int b, unsigned int c){
+    Triangle*temp = newTriangle();
+    temp->side_a = a;
+    temp->side_b = b;
+    temp->side_c = c;
+    return temp;
 }

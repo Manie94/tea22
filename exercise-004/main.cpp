@@ -2,7 +2,7 @@
 #include <fmt/format.h>
 
 #include triangle.h
-#include triangle.
+#include triangle.cpp
 
 //#define MAX_NAME_LENGTH 25
 
@@ -42,6 +42,20 @@ auto main(int argc, char** argv) -> int
 
     pPers = paul;
     fmt::print("Die Person auf die der Zeiger pPers zeigt ist {} Jahre alt!\n",pPers->alter);
+
+    Triangle* trig = newTriangle();
+    fmt::println("Side a of the triangle trig {}",trig->side_a);
+    fmt::println("Side a of the triangle trig {}",trig->side_b);
+    fmt::println("Side a of the triangle trig {}",trig->side_c);
+
+    //Speicherloch
+    //trig = newTriangle();
+
+    //Richtig
+    freeTriangle(trig);
+    trig = newTriangleWithValues(42,34,56);
+
+    fmt::println("The perimeter is: {}\n", perimeter(trig));
 
 
     return 0;
