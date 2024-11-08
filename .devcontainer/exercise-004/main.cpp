@@ -9,7 +9,8 @@ struct Person {
     unsigned int alter;
     float gewicht;
     char name[MAX_NAME_LENGTH];
-}
+};
+
 auto main(int argc, char** argv) -> int
 {
     Person paul;
@@ -38,7 +39,7 @@ auto main(int argc, char** argv) -> int
 
     pPers = paul;
     fmt::print("Die Person auf die der Zeiger pPers zeigt ist {} Jahre alt!\n",pPers->alter);
-    
+
 
     return 0;
 
